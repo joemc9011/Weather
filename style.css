@@ -1,0 +1,27 @@
+body{
+    background: url("weather.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.top {
+    background-color: rgba(196, 13, 74, 0.829);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    border: solid 10px black;
+}
+
+.searchfield {
+    margin-top: 25px;
+    background-color: steelblue;
+    padding: 50px;
+    max-width: 200px;
+    border: solid 10px black;
+    float: left;
+}
+
+.results {
+    background-color: rgba(247, 241, 241, 0.04)
+}
