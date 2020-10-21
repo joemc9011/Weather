@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script rel="stylesheet" href ="Rutgers/Weather/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -21,14 +23,16 @@
     <section >
         <div class = "searchfield">
             <input id=search type="text" placeholder = "City, State" >
-            <input type="submit" value="Search">
+            <button id = "startsearch"> Search </button>
         </div>
        
     </section>
+    <!-- prior search results -->
 <!-- main -->
 <section>
     <div class = "results">
-        <h1 class = "searchResults"> hey</h1>
+        <h1 class = "searchResults"></h1>
+        <p class="info"></p>
     </div>
 </section>
 </body>
