@@ -7,34 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script rel="stylesheet" href ="Rutgers/Weather/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 </head>
 
 <body>
-<!-- Title -->
+
+    <!-- Title -->
     <section class="top">
-        <div id = "box">
+        <div id="box">
             <h1>7 Day Weather Forecast</h1>
         </div>
     </section>
-<!-- search  -->
-    <section >
-        <div class = "searchfield">
-            <input id=search type="text" placeholder = "City, State" >
-            <button id = "startsearch"> Search </button>
+    <!-- search  -->
+    <section>
+        <div class="searchfield">
+            <input id="townState" type="text" placeholder="City, State">
+            <input class="startsearch" type="submit" value="Search">
         </div>
-       
+
+
+        <!-- prior search results -->
+        <!-- main -->
+
+        <div class="results">
+
+        </div>
     </section>
-    <!-- prior search results -->
-<!-- main -->
-<section>
-    <div class = "results">
-        <h1 class = "searchResults"></h1>
-        <p class="info"></p>
-    </div>
-</section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../Weather/weather.js"></script>
 
 </html>

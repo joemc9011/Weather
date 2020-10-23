@@ -17,7 +17,7 @@ body{
     margin-top: 25px;
     background-color: steelblue;
     padding: 50px;
-    max-width: 200px;
+    max-width: 180px;
     border: solid 5px white;
     float: left;
 }
@@ -25,7 +25,11 @@ body{
 .results {
     background-color: rgba(255, 255, 255, 0.7);
     border: 5px solid white;
-    margin-left: 23%;
-    margin-top: 1.8%;
-    text-align: center;
+    float: right;
+    width: 77%;
+    margin-top: 25px;
+    height: 400px;
+    margin-bottom: 25px;
+    
+    
 }

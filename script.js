@@ -1,21 +1,19 @@
 
 
-$("#startsearch").on("click", function(){
+function weatherSearch(location) {
+    var APIkey = "c63f974443533f9d0aaefd04573e9b35";
+    var queryURL = "api.openweathermap.org/data/2.5/forecast/daily?q=" + location + "&cnt=7&appid=" + key;
+    $.ajax({
+        url: queryURL,
+        method: "get"
+    }).then(function (response) {
+        console.log(response);
+        var place = $("<h1>").text(response.name);
+    });
 
-    var APIKey = "ecc63f974443533f9d0aaefd04573e9b35";
-    var searchInput = $("#search")
-    
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
-    "q="+searchInput+"&appidc63f974443533f9d0aaefd04573e9b35";
-
-$.ajax({
-    url: queryURL,
-    method: "GET" 
-}) .then(function(response){
-    console.log(queryURL);
-    console.log(response);
-// for now just checking to see if this works based off prior activity
-    $(".info").html(response);
+}
+$(".startsearch").on("click", function (event) {
+    event.preventDefault();
+    var location = $("#townState").val().trim();
+    weatherSearch(location);
 });
-
-})
