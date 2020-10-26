@@ -14,7 +14,7 @@ Build a weather dashoard
 ## Acceptance Criteria
 
 ```
-Provide the user the ability to search for a city.
+Provide the user the ability to search for a city.X
 
 Show the current and future conditions for that city.
 
