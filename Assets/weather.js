@@ -8,8 +8,29 @@ function myTimer() {
 $("#startsearch").on("click", function (event) {
     event.preventDefault();
     var city = $("#city").val().trim();
-    weatherSearch(city)
+    weatherSearch(city);
+
+ 
+
 });
+
+// local storage
+
+$("#startsearch").on("click", function (event){
+    event.preventDefault();
+    var citysearch = $("#city").val().trim();
+    // var recent = [];
+    // recent.push(citysearch);
+   var ls = localStorage.setItem("Cities", JSON.stringify(citysearch));
+   console.log(ls);
+
+    
+    
+
+
+
+});
+
 // api call for requested city
 function weatherSearch(city) {
     var querytodayURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIkey;
